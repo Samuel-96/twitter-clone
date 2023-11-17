@@ -1,0 +1,36 @@
+---
+import Enlace from "./Enlace.astro";
+import TwitterLogo from "../assets/twitter.png"
+import House from "../assets/house.png"
+import Explore from "../assets/buscar.png"
+import Notifications from "../assets/notificacion.png"
+import Messages from "../assets/messages.png"
+import Lists from "../assets/portapapeles.png"
+import Bookmarks from "../assets/bookmark.png"
+import Communities from "../assets/comunidad.png"
+import Profiles from "../assets/prfile.png"
+import Options from "../assets/opciones.png"
+import TarjetaPerfilA from "./TarjetaPerfilA.astro";
+---
+
+<div class="text-white mr-10 mt-5 fixed text-xl hidden sm:block">
+    <img class="h-7 w-7 mb-5 ml-1" src={TwitterLogo.src} alt="">
+    <div class="flex flex-col gap-4">
+            <Enlace img={House.src} name="Home"/>
+            <Enlace img={Explore.src} name="Explore"/>
+            <Enlace img={Notifications.src} name="Notifications"/>
+            <Enlace img={Messages.src} name="Messages"/>
+            <Enlace img={Lists.src} name="Lists"/>
+            <Enlace img={Bookmarks.src} name="Bookmarks"/>
+            <Enlace img={Communities.src} name="Communities"/>
+            <Enlace img={TwitterLogo.src} name="Premium"/>
+            <Enlace img={Profiles.src} name="Profiles"/>
+            <Enlace img={Options.src} name="More"/>
+            <div class="flex flex-row">
+                <button class="text-white p-3 w-full bg-purple rounded-3xl">Post</button>
+            </div>
+            
+            <TarjetaPerfilA user="Samuel"/>
+    </div>
+    
+</div>

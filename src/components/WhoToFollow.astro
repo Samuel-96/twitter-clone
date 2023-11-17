@@ -1,0 +1,13 @@
+---
+import TarjetaPerfil from "./TarjetaPerfil.astro";
+import Sadeas from "../assets/sadeas.webp"
+import Joker from "../assets/joker.png"
+---
+
+<div class="flex flex-col p-1 rounded-2xl bg-fondo text-white max-w-xs">
+    <h2 class="text-xl font-extrabold p-3">Who to follow</h2>
+    <TarjetaPerfil user="Sadeas_Stormlight" boton="Follow" img={Sadeas.src}/>
+    <TarjetaPerfil user="Coringa" boton="Follow" img={Joker.src}/>
+    <TarjetaPerfil user="Astro" boton="Following"/>
+    <p class="p-4 text-purple">Show more</p>
+</div>

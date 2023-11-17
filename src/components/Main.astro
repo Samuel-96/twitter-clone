@@ -1,0 +1,17 @@
+---
+import RefreshTimeline from "./RefreshTimeline.astro"
+let isVisible = true;
+
+---
+
+<div class="border-b border-gray-700 flex flex-wrap text-white items-center justify-center">
+    {isVisible ? <RefreshTimeline/> : null}
+    <div class="text-center flex-1 flex-wrap hover:bg-gray-600/50 transition duration-300 ease-in-out p-5 cursor-pointer">
+        <a class="border-b border-purple pb-5" href="">For you</a>
+    </div>
+    <div class="text-center flex-1 flex-wrap hover:bg-gray-600/50 transition duration-300 ease-in-out p-5 cursor-pointer">
+        <a href="">Following</a>
+    </div>
+
+    
+</div>

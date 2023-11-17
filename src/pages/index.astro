@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Posting from "../components/Posting.astro";
+import BarraLateral from "../components/BarraLateral.astro"
+import Meme from "../assets/meme.jpg"
+import Main from "../components/Main.astro"
+import Post from "../components/Post.astro";
+import Placeholder from "../assets/placeholder.jpg"
+import Search from "../components/Search.astro";
+import Premium from "../components/Premium.astro"
+import WhoToFollow from "../components/WhoToFollow.astro";
+import Trends from "../components/Trends.astro";
+import Sadeas from "../assets/sadeas.webp"
+import Joker from "../assets/joker.png"
+---
+
+<Layout title="Inicio">
+	<main class="grid grid-cols-3 h-screen">
+		<div class="md:flex flex-row-reverse bg-black hidden">
+			<BarraLateral/>
+		</div>
+
+		<div class="min-w-min p-4 bg-grey-400 border-l border-r border-gray-700 bg-black">
+			<Main/>
+			<Posting/>
+			<Post user="Joker" img={Joker.src} content="This video is so 😭😭😭" contentMedia={Placeholder.src} />
+			<Post user="KaladinStormblessed" content="En un universo absurdo, donde los pájaros son testigos mudos de nuestra búsqueda de significado, me pregunto si el sentido de la vida se encuentra al final del arcoíris o simplemente en el fondo de una taza de café bien cargado. Quizás la respuesta esté en reír ante la ironía de nuestras preguntas existenciales mientras el universo se encoge de hombros cósmicos."/>
+			<Post user="Satan666" contentMedia={Meme.src} />
+			<Post user="Sadeas_Stormlight" img={Sadeas.src} content="Every light has its storm" />
+		</div>
+
+		<div class="md:flex bg-black flex-col p-5 gap-5 hidden">
+			<Search/>
+			<Premium/>
+			<Trends/>
+			<WhoToFollow/>
+		</div>
+	</main>
+</Layout>

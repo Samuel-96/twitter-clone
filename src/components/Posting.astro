@@ -1,0 +1,28 @@
+---
+import UserIcon from "../assets/messenger.jpg";
+import GalleryIcon from "../assets/gallery.png"
+import Emoji from "../assets/emoji.png";
+import Schedule from "../assets/schedule.png";
+import Gif from "../assets/gif.png";
+import Poll from "../assets/poll.png";
+
+---
+
+<div class="flex flex-col p-8 gap-5 ">
+    <div class="flex flex-row gap-5 align-center">
+        <img class="w-10 h-10 rounded-2xl" src={UserIcon.src} alt="avatar usuario">
+        <input class=" bg-transparent text-white focus:outline-none pb-8 " type="text" placeholder="What is happening!?">
+    </div>
+    <div class="flex flex-row justify-between">
+        <div class="flex flex-row gap-3 ml-10">
+            <img class="h-5 w-5" src={GalleryIcon.src} alt="icono galeria">
+            <img class="h-5 w-5" src={Emoji.src} alt="icono galeria">
+            <img class="h-5 w-5" src={Schedule.src} alt="icono galeria">
+            <img class="h-5 w-5" src={Gif.src} alt="icono galeria">
+            <img class="h-5 w-5" src={Poll.src} alt="icono galeria">
+            <img class="h-5 w-5" src={GalleryIcon.src} alt="icono galeria">
+        </div>
+
+        <button class="text-white p-1 w-20 bg-purple rounded-3xl">Post</button>
+    </div>
+</div>
