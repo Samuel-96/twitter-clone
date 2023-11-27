@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Posting from "../components/Posting.astro";
 import BarraLateral from "../components/BarraLateral.astro"
-import RefreshTimeline from "../components/RefreshTimeline.astro";
 import Meme from "../assets/meme.jpg"
 import Main from "../components/Main.astro"
 import Post from "../components/Post.astro";
@@ -23,7 +22,6 @@ import Joker from "../assets/joker.png"
 
 		<div class="min-w-min p-4 bg-grey-400 border-l border-r border-gray-700 bg-black">
 			<Main/>
-			<RefreshTimeline/>
 			<Posting/>
 			<Post user="Joker" img={Joker.src} content="This video is so 😭😭😭" contentMedia={Placeholder.src} />
 			<Post user="KaladinStormblessed" content="En un universo absurdo, donde los pájaros son testigos mudos de nuestra búsqueda de significado, me pregunto si el sentido de la vida se encuentra al final del arcoíris o simplemente en el fondo de una taza de café bien cargado. Quizás la respuesta esté en reír ante la ironía de nuestras preguntas existenciales mientras el universo se encoge de hombros cósmicos."/>
